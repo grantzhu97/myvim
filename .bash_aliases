@@ -1,5 +1,4 @@
 
-
 ##############################################
 # my settings
 #
@@ -41,6 +40,7 @@ alias egrep='grep -E'
 alias fgrep='grep -F'
 alias ping='ping -vc1'
 alias dh='df -h'
+alias less='/bin/less -r'
 
 #smart find (find with excluede .git .svn)
 alias sfind='find . -type d \( -name .git -o -name .svn -o -name .repo \) -prune -o -print'
@@ -49,6 +49,14 @@ alias sfind='find . -type d \( -name .git -o -name .svn -o -name .repo \) -prune
 alias gst='git status'
 alias gls='git ls-tree -r HEAD'
 alias glogd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gitdiff-1="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 2|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git diff"
+alias gitdiff-2="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 3|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git diff"
+alias gitdiff-3="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 4|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git diff"
+alias gitlog-1="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 2|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git log --summary"
+alias gitlog-2="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 3|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git log --summary"
+alias gitlog-3="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 4|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git log --summary"
+alias gitshowall='git show --pretty=fuller --oneline HEAD^^..HEAD'
+alias gsa='git show --pretty=fuller --oneline HEAD^^..HEAD'
 
 # history management
 export HISTSIZE=100000
