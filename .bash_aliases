@@ -17,6 +17,7 @@ alias gvim="gvim -f 2>/dev/null"
 alias g='gvim'
 alias vrc='vim ~/.vimrc'
 alias vbrc='vim ~/.bashrc'
+alias vbal='vim ~/.bash_aliases'
 alias sbrc='source ~/.bashrc'
 alias hi='history | tail -20'
 alias dus='du -s *|sort -n'
@@ -45,6 +46,7 @@ alias dh='df -h'
 alias sfind='find . -type d \( -name .git -o -name .svn -o -name .repo \) -prune -o -print'
 
 # git config
+alias gst='git status'
 alias gls='git ls-tree -r HEAD'
 alias glogd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
