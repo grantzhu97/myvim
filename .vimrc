@@ -714,6 +714,9 @@ nnoremap <silent> <F6> :Rgrep<CR>
 
 :au QuickFixCmdPre * write
 
+" system tags
+set tags+=~/.ctags/systags
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " extern here:
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
