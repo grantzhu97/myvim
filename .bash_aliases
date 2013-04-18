@@ -63,6 +63,41 @@ export HISTSIZE=100000
 export HISTFILESIZE=100000000
 
 #ctags
-alias makectags='ctags --fields=+iaS --extra=+q -R'
+alias mktags='ctags --fields=+iaS --extra=+q -R'
 alias makesystags='ctags -I __THROW -I __attribute_pure__ -I __nonnull -I __attribute__ --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q  -f ~/.ctags/systags /usr/include/* /usr/include/sys/* /usr/include/bits/*  /usr/include/netinet/* /usr/include/arpa/* /usr/include/mysql/* /usr/include/X11/*'
 
+maketags(){
+    if [ -f tags ]; then rm tags; fi
+    ctags --fields=+iaS --extra=+q -R
+}
+
+makefilenametags(){
+    if [ -f filenametags ]; then rm filenametags; fi
+    echo -e "!_TAG_FILE_SORTED\t2\t/2=foldcase/" > filenametags
+    find . -not -regex '.*\.\(png\|gif\|so\)' -type f -printf "%f\t%p\t1\n" | \
+        sort -f >> filenametags
+}
+
+makecscope(){
+    if [ -f cscope.files ]; then rm cscope.files; fi
+    if [ -f cscope.in.out ]; then rm cscope.in.out; fi
+    if [ -f cscope.out ]; then rm cscope.out; fi
+    if [ -f cscope.po.out ]; then rm cscope.po.out; fi
+    find . -type f -name "*.h" -o -name "*.c" -o -name "*.cpp" -o -name "*.mk" -o -name "Makefile" -o -name "*.java" > cscope.files
+    cscope -bkq -i cscope.files
+}
+
+# make all tags
+makealltags(){
+    maketags;makefilenametags;makecscope
+}
+
+# clean all tags
+makecleanalltags(){
+    if [ -f tags ]; then rm tags; fi
+    if [ -f filenametags ]; then rm filenametags; fi
+    if [ -f cscope.files ]; then rm cscope.files; fi
+    if [ -f cscope.in.out ]; then rm cscope.in.out; fi
+    if [ -f cscope.out ]; then rm cscope.out; fi
+    if [ -f cscope.po.out ]; then rm cscope.po.out; fi
+}
