@@ -450,8 +450,8 @@ endfunction
 " my settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+"highlight WhitespaceEOL ctermbg=red guibg=red
+"match WhitespaceEOL /\s\+$/
 
 " OS detect
 if (has("win32") || has("win64") || has("win32unix"))
@@ -679,7 +679,7 @@ nmap <silent> <leader>l :TlistToggle<cr>
 map <silent> <F8> :TagbarToggle<cr>
 
 " settings for compile
-map <F7> :w<cr>:make -j8<cr>
+map <F7> :w!<cr>:make -j8<cr>
 "map <F7> :w<cr>:make -j8 TARGET_PRODUCT=iMX53 TARGET_TOOLS_PREFIX=tools/android-toolchain-eabi/bin/arm-linux-androideabi- boottarball systemtarball userdatatarball > /dev/null <CR>
 "map <F7> :w<cr>:make -j8 TARGET_PRODUCT=iMX53 TARGET_TOOLS_PREFIX=tools/android-toolchain-eabi/bin/arm-linux-androideabi- <CR>
 map <F7><F7> :make clean<CR>
