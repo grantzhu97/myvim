@@ -7,6 +7,10 @@
 #    . ~/.xbashrc
 #fi
 #############################################
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
 alias rm='rm -v'
 alias cp='cp -v'
 alias v='vim'
