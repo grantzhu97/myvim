@@ -453,6 +453,12 @@ endfunction
 "highlight WhitespaceEOL ctermbg=red guibg=red
 "match WhitespaceEOL /\s\+$/
 
+" Search highlighting define
+" terminals
+hi Search cterm=NONE ctermfg=white ctermbg=blue
+" gui
+hi Search guibg=peru guifg=wheat
+
 " OS detect
 if (has("win32") || has("win64") || has("win32unix"))
         let g:isWin = 1
@@ -609,7 +615,7 @@ let g:LookupFile_LookupFunc ='LookupFile_IgnoreCaseFunc'
 
 
 " Quickfix
-autocmd FileType c,cpp  map <buffer> <leader><space> :w<cr>:make<cr>
+autocmd FileType c,cpp  map <buffer> <leader><space> :w<cr>:make -j8<cr>
 nmap <leader>cn :cn<cr>
 nmap <leader>cp :cp<cr>
 nmap <leader>cw :cw<cr>
@@ -704,9 +710,9 @@ nnoremap <silent> <F6> :Rgrep<CR>
 " android
 ":let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h *.java *.sh *.rc'
 ":let Grep_Default_Filelist = '*.c *.cpp *.java'
-:let Grep_Default_Filelist = '*.mk Makefile'
+":let Grep_Default_Filelist = '*.mk Makefile'
 " C&C++
-":let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h'
+:let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h *.inc'
 " python
 ":let Grep_Default_Filelist = '*.py'
 :let Grep_Skip_Dirs = '.git .svn'
@@ -716,6 +722,7 @@ nnoremap <silent> <F6> :Rgrep<CR>
 
 " system tags
 set tags+=~/.ctags/systags
+set tags+=~/.ctags/winddk.tags
 
 " You can visually select text then press ~ to convert the text to UPPER CASE, then to lower case, then to Title Case. Keep pressing ~ until you get the case you want.
 function! TwiddleCase(str)
