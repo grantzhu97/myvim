@@ -3,14 +3,16 @@
 # my settings
 #
 # add to .bashrc and run . ~/.bashrc to enable these settings
-#if [-f ~/.xbashrc ] then
-#    . ~/.xbashrc
+#if [ -f ~/.bash_aliases ]; then
+#. ~/.bash_aliases
 #fi
 #############################################
+
+alias dir='dir -N --color'
+alias ls='ls --show-control-chars --color=auto' 
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
-
 alias rm='rm -v'
 alias cp='cp -v'
 alias v='vim'
