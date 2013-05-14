@@ -1,0 +1,6 @@
+set ignorecase
+
+set showtgbdcommands
+
+" top_full, top_big, even, bottom_big, bottom_full
+set winsplit=top_big
