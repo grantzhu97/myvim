@@ -5,8 +5,8 @@ set showtgbdcommands
 " top_full, top_big, even, bottom_big, bottom_full
 set winsplit=top_big
 
-highlight LineHighlight cterm=reverse ctermfg=Red ctermbg=Blue term=bold'
-highlight SelectedLineNr cterm=revers ctermfg=White ctermbg=Blue term=bold'
+" highlight LineHighlight cterm=reverse ctermfg=Red ctermbg=Blue term=bold'
+" highlight SelectedLineNr cterm=revers ctermfg=White ctermbg=Blue term=bold'
 
 " likes VS
 umap <F7>
