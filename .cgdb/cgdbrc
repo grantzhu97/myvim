@@ -1,0 +1,17 @@
+set ignorecase
+
+set showtgbdcommands
+
+" top_full, top_big, even, bottom_big, bottom_full
+set winsplit=top_big
+
+highlight LineHighlight cterm=reverse ctermfg=Red ctermbg=Blue term=bold'
+highlight SelectedLineNr cterm=revers ctermfg=White ctermbg=Blue term=bold'
+
+" likes VS
+umap <F7>
+umap <F8>
+umap <F10>
+map <F7> :next<CR>
+map <F8> :step<CR>
+map <F10> :finish<CR>
