@@ -1,10 +1,10 @@
 For vim7.3
 
-filenametags.sh generate the file list tag that use by lookupfile.vim.
+install:
 
-gentags.sh generate all tags that vim needs.
+- copy all files to ~/
+
+- Install YouComplete:
+    https://github.com/Valloric/YouCompleteMe
 
 If you have any problem about how to use, contact me grantzhu97@gmail.com
-
-Install YouComplete:
-    https://github.com/Valloric/YouCompleteMe
