@@ -132,6 +132,7 @@ let g:mapleader = ","
 set t_Co=256
 set hid           " switch buffer even no save
 set nu            " show line number
+"set nonumber
 set incsearch
 set hlsearch
 set ignorecase
@@ -453,6 +454,11 @@ endfunction
 "highlight WhitespaceEOL ctermbg=red guibg=red
 "match WhitespaceEOL /\s\+$/
 
+"For a list of all current settings, at the  :  prompt, enter:
+"set all
+"For a list of everything that you have set, at the  :  prompt, enter:
+"set
+
 " Search highlighting define
 " terminals
 hi Search cterm=NONE ctermfg=white ctermbg=blue
@@ -554,6 +560,12 @@ let showmarks_hlline_upper = 1
 " For showmarks plugin
 hi ShowMarksHLl ctermbg=Yellow   ctermfg=Black  guibg=#FFDB72    guifg=Black
 hi ShowMarksHLu ctermbg=Magenta  ctermfg=Black  guibg=#FFB3FF    guifg=Black
+
+" high light current line
+set cursorline
+:hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " Open file in a new tab
 "nmap gf :tabedit <cfile><cr>

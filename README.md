@@ -13,5 +13,6 @@ install:
 If you have any problem about how to use, contact me grantzhu97@gmail.com
 
 Change Log:
+- add octave.vim
 - add cgdbrc
 
