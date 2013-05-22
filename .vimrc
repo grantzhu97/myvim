@@ -760,3 +760,10 @@ vnoremap ~ ygv"=TwiddleCase(@")<CR>Pgv
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " extern here:
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" octave
+autocmd FileType octave setlocal keywordprg=info\ octave\ --vi-keys\ --index-search
+
+" Jumping between control statements
+let s:conditionalEnd = '\(([^()]*\)\@!\<end\>\([^()]*)\)\@!'
+autocmd FileType octave let b:match_words = '\<if\>\|\<while\>\|\<for\>\|\<switch\>:' .
+       \ s:conditionalEnd . ',\<if\>:\<elseif\>:\<else\>:' . s:conditionalEnd
