@@ -635,11 +635,14 @@ map <F3> :cp<cr>
 map <F4> :cn<cr>
 set switchbuf = "newtab"
 
+"os detect
+let s:uname = system("echo -n \"$(uname)\"")
+
 "cscope setting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 if has("cscope")
-    if has("mac") || has("macunix")
-        set csprg=/usr/local/bin/cscope
+    if s:uname == "Darwin"
+        set csprg=/opt/local/bin/cscope
     else
         set csprg=/usr/bin/cscope
     endif
