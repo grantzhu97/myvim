@@ -25,7 +25,7 @@ if [[ "$platform" == 'darwin' ]]; then
 fi
 
 # not darwin
-if [[ "$platform" -ne 'darwin' ]]; then
+if [[ "$platform" != 'darwin' ]]; then
     alias dir='dir -N --color'
     alias ls='ls --show-control-chars --color=auto' 
     alias ll='ls -alF'
