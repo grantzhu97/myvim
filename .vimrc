@@ -123,6 +123,8 @@ filetype indent on
 
 " set to auto read when a file is change from the outside
 set autoread
+set autowrite
+set modified
 
 "Set mapleader
 let mapleader = ","
@@ -665,6 +667,14 @@ nmap <C-]>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-]>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-]>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 
+
+" VimEnter                   After doing all the startup stuff, including
+"                            loading .vimrc files, executing the "-c cmd"
+"                            arguments, creating all windows and loading
+"                            the buffers in them.
+" CCTree auto load cscope.out 
+autocmd Vimenter * CCTreeLoadDB cscope.out
+
 " Add highlighting for function definition in C++
 function! EnhanceCppSyntax()
 	syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
@@ -767,3 +777,5 @@ autocmd FileType octave setlocal keywordprg=info\ octave\ --vi-keys\ --index-sea
 let s:conditionalEnd = '\(([^()]*\)\@!\<end\>\([^()]*)\)\@!'
 autocmd FileType octave let b:match_words = '\<if\>\|\<while\>\|\<for\>\|\<switch\>:' .
        \ s:conditionalEnd . ',\<if\>:\<elseif\>:\<else\>:' . s:conditionalEnd
+
+
