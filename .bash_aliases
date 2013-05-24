@@ -82,6 +82,7 @@ alias sfind='find . -type d \( -name .git -o -name .svn -o -name .repo \) -prune
 
 # git config
 alias gst='git status'
+# lists all the files being tracked in git repo.
 alias gls='git ls-tree -r HEAD'
 alias glogd="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gitdiff-1="git log --reverse|grep commit|cut -d ' ' -f2|tail -n 2|head -n 2|xargs echo|sed -e 's/\s/../'|xargs -n 1 git diff"
@@ -136,3 +137,15 @@ makecleanalltags(){
     if [ -f cscope.out ]; then rm cscope.out; fi
     if [ -f cscope.po.out ]; then rm cscope.po.out; fi
 }
+
+# calltree
+makecalltree()
+{
+    if [ -f calltree.jpg ]; then rm calltree.jpg; fi
+    calltree -gb -np -m *.c -dot > calltree.dot 
+    dot -Tjpg calltree.dot -o calltree.jpg
+    echo 'show calltree...'
+    sleep 1 
+    eog calltree.jpg
+}
+
