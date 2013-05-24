@@ -783,3 +783,13 @@ autocmd FileType octave let b:match_words = '\<if\>\|\<while\>\|\<for\>\|\<switc
 "
 let g:pydiction_menu_height = 20
 let g:pydiction_location = '~/.vim/after/ftplugin/complete-dict'
+
+
+"
+"set fdm=manual
+set fdm=indent
+"set fdm=expr
+"set fdm=syntax
+"set fdm=diff
+"set fdm=marker
+
