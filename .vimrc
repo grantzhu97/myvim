@@ -546,6 +546,13 @@ nmap <C-W><C-B> :BottomExplorerWindow<cr>
 nmap <silent> <leader>wm :WMToggle<cr>
 map <silent> <F9> :WMToggle<cr>
 
+" high light current line
+" before marks
+set cursorline
+:hi CursorLine   cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
 """"""""""""""""""""""""""""""
 " showmarks setting
 """"""""""""""""""""""""""""""
@@ -563,11 +570,6 @@ let showmarks_hlline_upper = 1
 hi ShowMarksHLl ctermbg=Yellow   ctermfg=Black  guibg=#FFDB72    guifg=Black
 hi ShowMarksHLu ctermbg=Magenta  ctermfg=Black  guibg=#FFB3FF    guifg=Black
 
-" high light current line
-set cursorline
-:hi CursorLine   cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
-:hi CursorColumn cterm=NONE ctermbg=darkgreen ctermfg=white guibg=darkred guifg=white
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
 
 " Open file in a new tab
 "nmap gf :tabedit <cfile><cr>
@@ -742,7 +744,7 @@ nnoremap <silent> <F6> :Rgrep<CR>
 ":let Grep_Default_Filelist = '*.c *.cpp *.java'
 ":let Grep_Default_Filelist = '*.mk Makefile'
 " C&C++
-:let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h *.inc'
+:let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h *.inc *.py'
 " python
 ":let Grep_Default_Filelist = '*.py'
 :let Grep_Skip_Dirs = '.git .svn'
@@ -778,4 +780,6 @@ let s:conditionalEnd = '\(([^()]*\)\@!\<end\>\([^()]*)\)\@!'
 autocmd FileType octave let b:match_words = '\<if\>\|\<while\>\|\<for\>\|\<switch\>:' .
        \ s:conditionalEnd . ',\<if\>:\<elseif\>:\<else\>:' . s:conditionalEnd
 
-
+"
+let g:pydiction_menu_height = 20
+let g:pydiction_location = '~/.vim/after/ftplugin/complete-dict'
