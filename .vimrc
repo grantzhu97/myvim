@@ -517,7 +517,7 @@ iab iname Grant zhu
 """""""""""""""""""""""""""""
 "netrw setting
 """"""""""""""""""""""""""""""
-let g:netrw_winsize = 50
+let g:netrw_winsize = 45
 nmap <silent> <leader>fe :Sexplore!<cr>
 
 """"""""""""""""""""""""""""""
@@ -528,7 +528,7 @@ let g:bufExplorerShowRelativePath=1  " Show relative paths.
 let g:bufExplorerSortBy='mru'        " Sort by most recently used.
 let g:bufExplorerSplitRight=0        " Split left.
 let g:bufExplorerSplitVertical=1     " Split vertically.
-let g:bufExplorerSplitVertSize = 50  " Split width
+let g:bufExplorerSplitVertSize = 45  " Split width
 let g:bufExplorerUseCurrentWindow=1  " Open in new window.
 autocmd BufWinEnter \[Buf\ List\] setl nonumber
 
@@ -537,7 +537,7 @@ autocmd BufWinEnter \[Buf\ List\] setl nonumber
 """"""""""""""""""""""""""""""
 "let g:winManagerWindowLayout = "FileExplorer,BufExplorer|TagList"
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer,TagList"
-let g:winManagerWidth = 50
+let g:winManagerWidth = 45
 let g:defaultExplorer = 0
 " ctrl + wf
 nmap <C-W><C-F> :FirstExplorerWindow<cr>
