@@ -45,7 +45,8 @@ inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
-  set mouse=a
+  "set mouse=a
+  set mouse=v
 endif
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -657,6 +658,10 @@ if has("cscope")
     if filereadable("cscope.out")
 		cs add cscope.out
 	endif
+     " add addtional database
+    "if filereadable("~/src/winddk_src/cscope.out")
+		"cs add ~/src/winddk_src/cscope.out
+	"endif
 	set csverb
 endif
 
@@ -675,13 +680,22 @@ nmap <C-]>d :cs find d <C-R>=expand("<cword>")<CR><CR>
 "                            arguments, creating all windows and loading
 "                            the buffers in them.
 " CCTree auto load cscope.out 
-autocmd Vimenter * CCTreeLoadDB cscope.out
+" ctrl + | + </>
+"autocmd Vimenter * CCTreeLoadDB cscope.out
+let g:CCTreeKeyTraceForwardTree = '<C-\>>' 
+let g:CCTreeKeyTraceReverseTree = '<C-\><' 
+let g:CCTreeKeyHilightTree = '<C-l>'        " Static highlighting
+let g:CCTreeKeySaveWindow = '<C-\>y' 
+let g:CCTreeKeyToggleWindow = '<C-\>w' 
+let g:CCTreeKeyCompressTree = 'zs'     " Compress call-tree 
+let g:CCTreeKeyDepthPlus = '<C-\>=' 
+let g:CCTreeKeyDepthMinus = '<C-\>-'
 
 " Add highlighting for function definition in C++
 function! EnhanceCppSyntax()
 	syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
 	hi def link cppFuncDef Special
-	endfunction
+endfunction
 
 autocmd Syntax cpp call EnhanceCppSyntax()
 
@@ -704,7 +718,6 @@ fun! SPLITAG() range
 endfun
 nmap <C-]> :call SPLITAG()<CR>z.
 
-"set tags = tags
 
 " config taglist
 let Tlist_Show_One_File = 1
@@ -753,7 +766,8 @@ nnoremap <silent> <F6> :Rgrep<CR>
 :au QuickFixCmdPre * write
 
 " system tags
-set tags+=~/.ctags/systags
+"set tags = tags
+"set tags+=~/.ctags/systags
 set tags+=~/.ctags/winddk.tags
 
 " You can visually select text then press ~ to convert the text to UPPER CASE, then to lower case, then to Title Case. Keep pressing ~ until you get the case you want.
@@ -792,4 +806,22 @@ set fdm=indent
 "set fdm=syntax
 "set fdm=diff
 "set fdm=marker
+"
+" taghighlight settings
+" UpdateTypesFile     -- create the syntax highlighting file used to show the extra colouring, if you have tag file, don`t use it.
+" UpdateTypesFileOnly -- use the current tags file rather than genrating a new one
+"if has("cscope")
+    "if ! exists('g:TagHighlightSettings')
+        "let g:TagHighlightSettings = {}
+    "endif
+
+    "let g:TagHighlightSettings['IgnoreFileScope']='True'
+    "let g:TagHighlightSettings['TagFileName']='~/.vim/winddk.tags'
+    "let g:TagHighlightSettings['EnableCscope'] = 1
+    "if s:uname == "Darwin"
+        "let g:TagHighlightSettings['CscopeExecutable'] = '/opt/local/bin/cscope'
+    "else
+        "let g:TagHighlightSettings['CscopeExecutable'] = '/usr/bin/cscope'
+    "endif
+"endif
 
