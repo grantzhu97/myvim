@@ -825,3 +825,23 @@ set fdm=indent
     "endif
 "endif
 
+" rainbow colors copied from and best suited for dark gruvbox colorscheme (https://github.com/morhetz/gruvbox):
+let g:rainbow_guifgs = [
+    \ '#458588',
+    \ '#b16286',
+    \ '#cc241d',
+    \ '#d65d0e',
+    \ '#458588',
+    \ '#b16286',
+    \ '#cc241d',
+    \ '#d65d0e',
+    \ '#458588',
+    \ '#b16286',
+    \ '#cc241d',
+    \ '#d65d0e',
+    \ '#458588',
+    \ '#b16286',
+    \ '#cc241d',
+    \ '#d65d0e',
+    \ ]
+au FileType c,cpp,objc,objcpp call rainbow#load()
