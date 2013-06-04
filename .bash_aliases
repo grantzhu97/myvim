@@ -101,6 +101,10 @@ export HISTFILESIZE=100000000
 #ctags
 alias mktags='$ctags --fields=+iaS --extra=+q -R'
 alias makesystags='$ctags -I __THROW -I __attribute_pure__ -I __nonnull -I __attribute__ --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q  -f ~/.ctags/systags /usr/include/* /usr/include/sys/* /usr/include/bits/*  /usr/include/netinet/* /usr/include/arpa/* /usr/include/mysql/* /usr/include/X11/*'
+makewinddktags(){
+    if [ -f winddk.tag ]; then rm winddk.tag; fi
+    ctags --fields=+iaS --extra=+q -f ~/.ctags/winddk.tag -R ~/src/winddk_src/inc/*
+}
 
 maketags(){
     if [ -f tags ]; then rm tags; fi
