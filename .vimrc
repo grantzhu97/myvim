@@ -691,13 +691,6 @@ let g:CCTreeKeyCompressTree = 'zs'     " Compress call-tree
 let g:CCTreeKeyDepthPlus = '<C-\>=' 
 let g:CCTreeKeyDepthMinus = '<C-\>-'
 
-" Add highlighting for function definition in C++
-function! EnhanceCppSyntax()
-	syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
-	hi def link cppFuncDef Special
-endfunction
-
-autocmd Syntax cpp call EnhanceCppSyntax()
 
 fun! SPLITAG() range
 	let oldfile=expand("%:p")
@@ -844,4 +837,12 @@ let g:rainbow_guifgs = [
     \ '#cc241d',
     \ '#d65d0e',
     \ ]
-au FileType c,cpp,objc,objcpp call rainbow#load()
+au FileType c,cpp,objc,objcpp,inc call rainbow#load()
+
+" Add highlighting for function definition in C++
+function! EnhanceCppSyntax()
+	syn match cppFuncDef "::\~\?\zs\h\w*\ze([^)]*\()\s*\(const\)\?\)\?$"
+	"hi def link cppFuncDef Special
+	hi cppFuncDef  guifg=#3EFFE2
+endfunction
+autocmd Syntax cpp call EnhanceCppSyntax()

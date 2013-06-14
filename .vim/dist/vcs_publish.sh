@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BBUSER=abudden
-BBPROJ=easycolour
+BBPROJ=taghighlight
 
 BITBUCKET=ssh://hg@bitbucket.org/${BBUSER}/${BBPROJ}
 
