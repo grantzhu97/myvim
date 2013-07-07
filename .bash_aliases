@@ -73,7 +73,7 @@ alias ....='cd ../../..'
 alias e='vim'
 alias egrep='grep -E'
 alias fgrep='grep -F'
-alias ping='ping -vc1'
+#alias ping='ping -vc1'
 alias dh='df -h'
 alias less='/bin/less -r'
 
