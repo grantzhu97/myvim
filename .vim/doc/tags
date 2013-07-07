@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 !	change.txt	/*!*
 !!	change.txt	/*!!*
 #	pattern.txt	/*#*
@@ -1848,11 +1849,14 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 :GnatPretty	ft_ada.txt	/*:GnatPretty*
 :GnatTags	ft_ada.txt	/*:GnatTags*
 :Hexplore	pi_netrw.txt	/*:Hexplore*
+=======
+>>>>>>> Stashed changes
 :LUBufs	lookupfile.txt	/*:LUBufs*
 :LUPath	lookupfile.txt	/*:LUPath*
 :LUTags	lookupfile.txt	/*:LUTags*
 :LUWalk	lookupfile.txt	/*:LUWalk*
 :LookupFile	lookupfile.txt	/*:LookupFile*
+<<<<<<< Updated upstream
 :Man	filetype.txt	/*:Man*
 :MkVimball	pi_vimball.txt	/*:MkVimball*
 :N	editing.txt	/*:N*
@@ -1874,6 +1878,8 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 :RmVimball	pi_vimball.txt	/*:RmVimball*
 :Sexplore	pi_netrw.txt	/*:Sexplore*
 :TOhtml	syntax.txt	/*:TOhtml*
+=======
+>>>>>>> Stashed changes
 :TagbarClose	tagbar.txt	/*:TagbarClose*
 :TagbarCurrentTag	tagbar.txt	/*:TagbarCurrentTag*
 :TagbarDebug	tagbar.txt	/*:TagbarDebug*
@@ -1885,6 +1891,7 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 :TagbarShowTag	tagbar.txt	/*:TagbarShowTag*
 :TagbarToggle	tagbar.txt	/*:TagbarToggle*
 :TagbarTogglePause	tagbar.txt	/*:TagbarTogglePause*
+<<<<<<< Updated upstream
 :Texplore	pi_netrw.txt	/*:Texplore*
 :UpdateTypesFile	TagHighlight.txt	/*:UpdateTypesFile*
 :UpdateTypesFileOnly	TagHighlight.txt	/*:UpdateTypesFileOnly*
@@ -3136,6 +3143,8 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 <C-ScrollWheelLeft>	scroll.txt	/*<C-ScrollWheelLeft>*
 <C-ScrollWheelRight>	scroll.txt	/*<C-ScrollWheelRight>*
 <C-ScrollWheelUp>	scroll.txt	/*<C-ScrollWheelUp>*
+=======
+>>>>>>> Stashed changes
 <C-Y>,	zencoding.txt	/*<C-Y>,*
 <C-Y>/	zencoding.txt	/*<C-Y>\/*
 <C-Y>A	zencoding.txt	/*<C-Y>A*
@@ -3148,6 +3157,7 @@ $VIMRUNTIME	starting.txt	/*$VIMRUNTIME*
 <C-Y>j	zencoding.txt	/*<C-Y>j*
 <C-Y>k	zencoding.txt	/*<C-Y>k*
 <C-Y>n	zencoding.txt	/*<C-Y>n*
+<<<<<<< Updated upstream
 <CR>	motion.txt	/*<CR>*
 <CSI>	intro.txt	/*<CSI>*
 <Char->	map.txt	/*<Char->*
@@ -3361,6 +3371,8 @@ BufWritePre	autocmd.txt	/*BufWritePre*
 C	change.txt	/*C*
 C-editing	tips.txt	/*C-editing*
 C-indenting	indent.txt	/*C-indenting*
+=======
+>>>>>>> Stashed changes
 CCTree	cctree.txt	/*CCTree*
 CCTree-Custom-Key-Map	cctree.txt	/*CCTree-Custom-Key-Map*
 CCTree-Database-Load-Instantaneously	cctree.txt	/*CCTree-Database-Load-Instantaneously*
@@ -3409,6 +3421,7 @@ CCTreeWindowHeight	cctree.txt	/*CCTreeWindowHeight*
 CCTreeWindowMinWidth	cctree.txt	/*CCTreeWindowMinWidth*
 CCTreeWindowVertical	cctree.txt	/*CCTreeWindowVertical*
 CCTreeWindowWidth	cctree.txt	/*CCTreeWindowWidth*
+<<<<<<< Updated upstream
 COMSPEC	starting.txt	/*COMSPEC*
 CR-used-for-NL	pattern.txt	/*CR-used-for-NL*
 CTRL-6	editing.txt	/*CTRL-6*
@@ -4482,6 +4495,8 @@ L	motion.txt	/*L*
 Linux-backspace	options.txt	/*Linux-backspace*
 List	eval.txt	/*List*
 Lists	eval.txt	/*Lists*
+=======
+>>>>>>> Stashed changes
 LookupFile-command	lookupfile.txt	/*LookupFile-command*
 LookupFile_AllowNewFiles	lookupfile.txt	/*LookupFile_AllowNewFiles*
 LookupFile_AlwaysAcceptFirst	lookupfile.txt	/*LookupFile_AlwaysAcceptFirst*
@@ -4510,6 +4525,7 @@ LookupFile_UsingSpecializedTags	lookupfile.txt	/*LookupFile_UsingSpecializedTags
 LookupFile_ignorecase	lookupfile.txt	/*LookupFile_ignorecase*
 LookupFile_smartcase	lookupfile.txt	/*LookupFile_smartcase*
 LookupFile_switchbuf	lookupfile.txt	/*LookupFile_switchbuf*
+<<<<<<< Updated upstream
 Lua	if_lua.txt	/*Lua*
 M	motion.txt	/*M*
 MDI	starting.txt	/*MDI*
@@ -4811,10 +4827,16 @@ WWW	intro.txt	/*WWW*
 Win32	os_win32.txt	/*Win32*
 WinEnter	autocmd.txt	/*WinEnter*
 WinLeave	autocmd.txt	/*WinLeave*
+=======
+UpdateTypesFile	ctags_highlighting.txt	/*UpdateTypesFile*
+UpdateTypesFile!	ctags_highlighting.txt	/*UpdateTypesFile!*
+UpdateTypesFileOnly	ctags_highlighting.txt	/*UpdateTypesFileOnly*
+>>>>>>> Stashed changes
 WinManagerFileEdit	winmanager.txt	/*WinManagerFileEdit*
 WinManagerForceReSize	winmanager.txt	/*WinManagerForceReSize*
 WinManagerResumeAUs	winmanager.txt	/*WinManagerResumeAUs*
 WinManagerSuspendAUs	winmanager.txt	/*WinManagerSuspendAUs*
+<<<<<<< Updated upstream
 X	change.txt	/*X*
 X11	options.txt	/*X11*
 X11-icon	gui_x11.txt	/*X11-icon*
@@ -5124,6 +5146,16 @@ browse()	eval.txt	/*browse()*
 browsedir()	eval.txt	/*browsedir()*
 browsefilter	editing.txt	/*browsefilter*
 bufexists()	eval.txt	/*bufexists()*
+=======
+b:TypesCTagsFile	ctags_highlighting.txt	/*b:TypesCTagsFile*
+b:TypesFileDoNotGenerateTags	ctags_highlighting.txt	/*b:TypesFileDoNotGenerateTags*
+b:TypesFileIncludeLocals	ctags_highlighting.txt	/*b:TypesFileIncludeLocals*
+b:TypesFileIncludeSynMatches	ctags_highlighting.txt	/*b:TypesFileIncludeSynMatches*
+b:TypesFileLanguages	ctags_highlighting.txt	/*b:TypesFileLanguages*
+b:TypesFileRecurse	ctags_highlighting.txt	/*b:TypesFileRecurse*
+b:TypesFileSkipVimKeywords	ctags_highlighting.txt	/*b:TypesFileSkipVimKeywords*
+b:TypesPrefix	ctags_highlighting.txt	/*b:TypesPrefix*
+>>>>>>> Stashed changes
 bufexplorer	bufexplorer.txt	/*bufexplorer*
 bufexplorer-changelog	bufexplorer.txt	/*bufexplorer-changelog*
 bufexplorer-credits	bufexplorer.txt	/*bufexplorer-credits*
@@ -5134,6 +5166,7 @@ bufexplorer-usage	bufexplorer.txt	/*bufexplorer-usage*
 bufexplorer-windowlayout	bufexplorer.txt	/*bufexplorer-windowlayout*
 bufexplorer.txt	bufexplorer.txt	/*bufexplorer.txt*
 buffer-explorer	bufexplorer.txt	/*buffer-explorer*
+<<<<<<< Updated upstream
 buffer-functions	usr_41.txt	/*buffer-functions*
 buffer-hidden	windows.txt	/*buffer-hidden*
 buffer-list	windows.txt	/*buffer-list*
@@ -5517,12 +5550,17 @@ cscoperelative	if_cscop.txt	/*cscoperelative*
 cscopetag	if_cscop.txt	/*cscopetag*
 cscopetagorder	if_cscop.txt	/*cscopetagorder*
 cscopeverbose	if_cscop.txt	/*cscopeverbose*
+=======
+c-support	csupport.txt	/*c-support*
+color-scheme-explorer	csExplorer.txt	/*color-scheme-explorer*
+>>>>>>> Stashed changes
 csexplorer	csExplorer.txt	/*csexplorer*
 csexplorer-changelog	csExplorer.txt	/*csexplorer-changelog*
 csexplorer-credits	csExplorer.txt	/*csexplorer-credits*
 csexplorer-todo	csExplorer.txt	/*csexplorer-todo*
 csexplorer-usage	csExplorer.txt	/*csexplorer-usage*
 csexplorer.txt	csExplorer.txt	/*csexplorer.txt*
+<<<<<<< Updated upstream
 csh.vim	syntax.txt	/*csh.vim*
 cspc	if_cscop.txt	/*cspc*
 csprg	if_cscop.txt	/*csprg*
@@ -5530,6 +5568,8 @@ csqf	if_cscop.txt	/*csqf*
 csre	if_cscop.txt	/*csre*
 cst	if_cscop.txt	/*cst*
 csto	if_cscop.txt	/*csto*
+=======
+>>>>>>> Stashed changes
 csupport	csupport.txt	/*csupport*
 csupport-Ctrl-j	csupport.txt	/*csupport-Ctrl-j*
 csupport-ad-mappings	csupport.txt	/*csupport-ad-mappings*
@@ -5608,6 +5648,7 @@ csupport-usage-gvim	csupport.txt	/*csupport-usage-gvim*
 csupport-usage-vim	csupport.txt	/*csupport-usage-vim*
 csupport-windows	csupport.txt	/*csupport-windows*
 csupport.txt	csupport.txt	/*csupport.txt*
+<<<<<<< Updated upstream
 csverb	if_cscop.txt	/*csverb*
 ctags	tagsrch.txt	/*ctags*
 ctags-gone	version6.txt	/*ctags-gone*
@@ -6284,6 +6325,24 @@ g:ada_space_errors	ft_ada.txt	/*g:ada_space_errors*
 g:ada_standard_types	ft_ada.txt	/*g:ada_standard_types*
 g:ada_with_gnat_project_files	ft_ada.txt	/*g:ada_with_gnat_project_files*
 g:ada_withuse_ordinary	ft_ada.txt	/*g:ada_withuse_ordinary*
+=======
+ctags_highlighting	ctags_highlighting.txt	/*ctags_highlighting*
+ctags_highlighting-add-example	ctags_highlighting.txt	/*ctags_highlighting-add-example*
+ctags_highlighting-adding	ctags_highlighting.txt	/*ctags_highlighting-adding*
+ctags_highlighting-colours	ctags_highlighting.txt	/*ctags_highlighting-colours*
+ctags_highlighting-commands	ctags_highlighting.txt	/*ctags_highlighting-commands*
+ctags_highlighting-config	ctags_highlighting.txt	/*ctags_highlighting-config*
+ctags_highlighting-contents	ctags_highlighting.txt	/*ctags_highlighting-contents*
+ctags_highlighting-copyright	ctags_highlighting.txt	/*ctags_highlighting-copyright*
+ctags_highlighting-custom	ctags_highlighting.txt	/*ctags_highlighting-custom*
+ctags_highlighting-history	ctags_highlighting.txt	/*ctags_highlighting-history*
+ctags_highlighting-install	ctags_highlighting.txt	/*ctags_highlighting-install*
+ctags_highlighting-intro	ctags_highlighting.txt	/*ctags_highlighting-intro*
+ctags_highlighting-manual	ctags_highlighting.txt	/*ctags_highlighting-manual*
+ctags_highlighting-website	ctags_highlighting.txt	/*ctags_highlighting-website*
+ctags_highlighting-wishlist	ctags_highlighting.txt	/*ctags_highlighting-wishlist*
+ctags_highlighting.txt	ctags_highlighting.txt	/*ctags_highlighting.txt*
+>>>>>>> Stashed changes
 g:bufExplorerDefaultHelp	bufexplorer.txt	/*g:bufExplorerDefaultHelp*
 g:bufExplorerDetailedHelp	bufexplorer.txt	/*g:bufExplorerDetailedHelp*
 g:bufExplorerFindActive	bufexplorer.txt	/*g:bufExplorerFindActive*
@@ -6296,6 +6355,7 @@ g:bufExplorerSortBy	bufexplorer.txt	/*g:bufExplorerSortBy*
 g:bufExplorerSplitBelow	bufexplorer.txt	/*g:bufExplorerSplitBelow*
 g:bufExplorerSplitOutPathName	bufexplorer.txt	/*g:bufExplorerSplitOutPathName*
 g:bufExplorerSplitRight	bufexplorer.txt	/*g:bufExplorerSplitRight*
+<<<<<<< Updated upstream
 g:clojure_align_multiline_strings	indent.txt	/*g:clojure_align_multiline_strings*
 g:clojure_fuzzy_indent	indent.txt	/*g:clojure_fuzzy_indent*
 g:clojure_fuzzy_indent_blacklist	indent.txt	/*g:clojure_fuzzy_indent_blacklist*
@@ -6499,6 +6559,8 @@ g:netrw_xstrlen	pi_netrw.txt	/*g:netrw_xstrlen*
 g:sh_isk	syntax.txt	/*g:sh_isk*
 g:sh_noisk	syntax.txt	/*g:sh_noisk*
 g:syntax_on	syntax.txt	/*g:syntax_on*
+=======
+>>>>>>> Stashed changes
 g:tagbar_autoclose	tagbar.txt	/*g:tagbar_autoclose*
 g:tagbar_autofocus	tagbar.txt	/*g:tagbar_autofocus*
 g:tagbar_autoshowtag	tagbar.txt	/*g:tagbar_autoshowtag*
@@ -6515,6 +6577,7 @@ g:tagbar_sort	tagbar.txt	/*g:tagbar_sort*
 g:tagbar_systemenc	tagbar.txt	/*g:tagbar_systemenc*
 g:tagbar_updateonsave_maxlines	tagbar.txt	/*g:tagbar_updateonsave_maxlines*
 g:tagbar_width	tagbar.txt	/*g:tagbar_width*
+<<<<<<< Updated upstream
 g:tar_browseoptions	pi_tar.txt	/*g:tar_browseoptions*
 g:tar_cmd	pi_tar.txt	/*g:tar_cmd*
 g:tar_copycmd	pi_tar.txt	/*g:tar_copycmd*
@@ -7197,6 +7260,8 @@ location-list-window	quickfix.txt	/*location-list-window*
 log()	eval.txt	/*log()*
 log10()	eval.txt	/*log10()*
 long-lines	version5.txt	/*long-lines*
+=======
+>>>>>>> Stashed changes
 lookupfile-acknowledgements	lookupfile.txt	/*lookupfile-acknowledgements*
 lookupfile-buffer-cmd-alternative	lookupfile.txt	/*lookupfile-buffer-cmd-alternative*
 lookupfile-changes	lookupfile.txt	/*lookupfile-changes*
@@ -7228,6 +7293,7 @@ lookupfile-usage	lookupfile.txt	/*lookupfile-usage*
 lookupfile-walk-path	lookupfile.txt	/*lookupfile-walk-path*
 lookupfile-wishlist	lookupfile.txt	/*lookupfile-wishlist*
 lookupfile.txt	lookupfile.txt	/*lookupfile.txt*
+<<<<<<< Updated upstream
 lowercase	change.txt	/*lowercase*
 lpc.vim	syntax.txt	/*lpc.vim*
 lua	if_lua.txt	/*lua*
@@ -8621,6 +8687,8 @@ tag-search	tagsrch.txt	/*tag-search*
 tag-security	tagsrch.txt	/*tag-security*
 tag-skip-file	tagsrch.txt	/*tag-skip-file*
 tag-stack	tagsrch.txt	/*tag-stack*
+=======
+>>>>>>> Stashed changes
 tagbar	tagbar.txt	/*tagbar*
 tagbar-autoopen	tagbar.txt	/*tagbar-autoopen*
 tagbar-commands	tagbar.txt	/*tagbar-commands*
@@ -8642,6 +8710,7 @@ tagbar-statusline	tagbar.txt	/*tagbar-statusline*
 tagbar-todo	tagbar.txt	/*tagbar-todo*
 tagbar-usage	tagbar.txt	/*tagbar-usage*
 tagbar.txt	tagbar.txt	/*tagbar.txt*
+<<<<<<< Updated upstream
 tagfiles()	eval.txt	/*tagfiles()*
 taghl_config.txt	TagHighlight.txt	/*taghl_config.txt*
 taglist()	eval.txt	/*taglist()*
@@ -9212,6 +9281,9 @@ windows.txt	windows.txt	/*windows.txt*
 windows95	os_win32.txt	/*windows95*
 winheight()	eval.txt	/*winheight()*
 winline()	eval.txt	/*winline()*
+=======
+v_<C-Y>,	zencoding.txt	/*v_<C-Y>,*
+>>>>>>> Stashed changes
 winmanager	winmanager.txt	/*winmanager*
 winmanager-adding	winmanager.txt	/*winmanager-adding*
 winmanager-bufexplorer-settings	winmanager.txt	/*winmanager-bufexplorer-settings*
@@ -9232,6 +9304,7 @@ winmanager-plugin	winmanager.txt	/*winmanager-plugin*
 winmanager-settings	winmanager.txt	/*winmanager-settings*
 winmanager-thanks	winmanager.txt	/*winmanager-thanks*
 winmanager-updates	winmanager.txt	/*winmanager-updates*
+<<<<<<< Updated upstream
 winnr()	eval.txt	/*winnr()*
 winrestcmd()	eval.txt	/*winrestcmd()*
 winrestview()	eval.txt	/*winrestview()*
@@ -9344,6 +9417,8 @@ zb	scroll.txt	/*zb*
 zc	fold.txt	/*zc*
 zd	fold.txt	/*zd*
 ze	scroll.txt	/*ze*
+=======
+>>>>>>> Stashed changes
 zencoding	zencoding.txt	/*zencoding*
 zencoding-balance-tag-inward	zencoding.txt	/*zencoding-balance-tag-inward*
 zencoding-balance-tag-outward	zencoding.txt	/*zencoding-balance-tag-outward*
@@ -9371,6 +9446,7 @@ zencoding-tutorial	zencoding.txt	/*zencoding-tutorial*
 zencoding-update-image-size	zencoding.txt	/*zencoding-update-image-size*
 zencoding-wrap-wtih-abbreviation	zencoding.txt	/*zencoding-wrap-wtih-abbreviation*
 zencoding.txt	zencoding.txt	/*zencoding.txt*
+<<<<<<< Updated upstream
 zf	fold.txt	/*zf*
 zg	spell.txt	/*zg*
 zh	scroll.txt	/*zh*
@@ -9417,3 +9493,5 @@ zz	scroll.txt	/*zz*
 {}	intro.txt	/*{}*
 }	motion.txt	/*}*
 ~	change.txt	/*~*
+=======
+>>>>>>> Stashed changes

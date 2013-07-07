@@ -691,7 +691,6 @@ let g:CCTreeKeyCompressTree = 'zs'     " Compress call-tree
 let g:CCTreeKeyDepthPlus = '<C-\>=' 
 let g:CCTreeKeyDepthMinus = '<C-\>-'
 
-
 fun! SPLITAG() range
 	let oldfile=expand("%:p")
 	if &modified
@@ -846,3 +845,11 @@ function! EnhanceCppSyntax()
 	hi cppFuncDef  guifg=#3EFFE2
 endfunction
 autocmd Syntax cpp call EnhanceCppSyntax()
+
+" It is so important for cygwin
+if s:uname == "CYGWIN_NT-6.1"
+    let &t_ti.="\e[1 q"
+    let &t_SI.="\e[5 q"
+    let &t_EI.="\e[1 q"
+    let &t_te.="\e[0 q"
+endif
