@@ -749,7 +749,8 @@ nnoremap <silent> <F6> :Rgrep<CR>
 ":let Grep_Default_Filelist = '*.c *.cpp *.java'
 ":let Grep_Default_Filelist = '*.mk Makefile'
 " C&C++
-:let Grep_Default_Filelist = '*.c *.cpp *.asm Makefile *.mk .config *.h *.inc *.py'
+":let Grep_Default_Filelist = '*.c *.cpp *.asm *.S Makefile *.mk .config *.h *.inc *.py'
+:let Grep_Default_Filelist = '*.c *.cpp'
 " python
 ":let Grep_Default_Filelist = '*.py'
 :let Grep_Skip_Dirs = '.git .svn'
@@ -760,7 +761,7 @@ nnoremap <silent> <F6> :Rgrep<CR>
 " system tags
 "set tags = tags
 "set tags+=~/.ctags/systags
-set tags+=~/.ctags/winddk.tags
+"set tags+=~/.ctags/winddk.tags
 
 " You can visually select text then press ~ to convert the text to UPPER CASE, then to lower case, then to Title Case. Keep pressing ~ until you get the case you want.
 function! TwiddleCase(str)
@@ -847,9 +848,9 @@ endfunction
 autocmd Syntax cpp call EnhanceCppSyntax()
 
 " It is so important for cygwin
-if s:uname == "CYGWIN_NT-6.1"
+"if s:uname == "CYGWIN_NT-6.1"
     let &t_ti.="\e[1 q"
     let &t_SI.="\e[5 q"
     let &t_EI.="\e[1 q"
     let &t_te.="\e[0 q"
-endif
+"endif
