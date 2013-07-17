@@ -41,6 +41,10 @@ else
     alias l='ls -fksCFG'
 fi
 
+# environment
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='01;04;32'
+
 alias hl='cd ~/'
 alias rm='rm -v'
 alias cp='cp -v'
