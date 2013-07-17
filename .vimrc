@@ -501,6 +501,10 @@ map <leader>w :w!<cr>
 map <leader>q :q!<cr>
 map <leader>qa :qa!<cr>
 
+" split window
+map <leader>x :30sp<cr>
+map <leader>vx :30vsp<cr>
+
 " auto complete
 inoremap <leader>1 ()<esc>:let leavechar=")"<cr>i
 inoremap <leader>2 []<esc>:let leavechar="]"<cr>i
