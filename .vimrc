@@ -549,7 +549,7 @@ nmap <C-W><C-F> :FirstExplorerWindow<cr>
 " ctrl + wb
 nmap <C-W><C-B> :BottomExplorerWindow<cr>
 nmap <silent> <leader>wm :WMToggle<cr>
-map <silent> <F9> :WMToggle<cr>
+map <silent> <F8> :WMToggle<cr>
 
 " high light current line
 " before marks
@@ -723,7 +723,7 @@ let Tlist_Use_Right_Window =1
 nmap <silent> <leader>l :TlistToggle<cr>
 
 " Tagbar
-map <silent> <F8> :TagbarToggle<cr>
+map <silent> <F9> :TagbarToggle<cr>
 
 " settings for compile
 map <F7> :w!<cr>:make -j8<cr>
