@@ -1,16 +1,16 @@
 For vim7.3
 
-install:
+Install:
 
-- copy all files to ~/
+- Copy all files to ~/
 
 - Install YouComplete:
     https://github.com/Valloric/YouCompleteMe
 
-- for Mac
+- For Mac
     sudo port install ctags @5.8 
 
 Change Log:
-- add octave.vim
-- add cgdbrc
+- Add octave.vim
+- Add cgdbrc
 
